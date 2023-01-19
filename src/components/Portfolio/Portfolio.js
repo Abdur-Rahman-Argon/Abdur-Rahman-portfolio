@@ -1,7 +1,6 @@
 import React from "react";
 
 import Banner from "../Banner/Banner";
-import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import SideInfo from "../Contact/SideInfo";
@@ -9,20 +8,18 @@ import Footer from "../Footer/Footer";
 import Education from "../Qualification/Education";
 import Training from "../Qualification/Training";
 import Projects from "../Projects/Projects";
+import Navbar from "../Navbar/Navbar";
 
 const Portfolio = () => {
   return (
     <div className="  ">
-      {/*  */}
-      <Navbar />
-
       {/*  */}
       <header className=" my-10">
         <Banner />
       </header>
 
       {/*  */}
-      <section className=" my-10">
+      <section id="#about" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get to Know Me
@@ -34,7 +31,7 @@ const Portfolio = () => {
         <About />
       </section>
 
-      <section className=" my-10">
+      <section id="#skills" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I can do
@@ -45,7 +42,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className=" my-10">
+      <section id="#education" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I made
@@ -60,7 +57,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className=" my-10">
+      <section id="#resent-project" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I made
@@ -72,7 +69,7 @@ const Portfolio = () => {
         <Projects />
       </section>
 
-      <section className=" my-10">
+      <section id="#demo-project" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I made
@@ -83,7 +80,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className=" my-10">
+      <section id="#contact" className=" my-10">
         <div className=" text-center mx-20 ">
           <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get in Touch

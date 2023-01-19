@@ -33,3 +33,83 @@ const Project = () => {
 };
 
 export default Project;
+
+/* 
+const project = [
+  {
+    projectTittle: "Shopping.com",
+    projectKeyword: "#1 MERN Project",
+    liveSiteLink: "https://shopping-early.web.app/",
+    clientSiteLink: "https://github.com/Abdur-Rahman-Argon/Shoping.com",
+    serverSiteLink: "https://github.com/Abdur-Rahman-Argon/shoping-server",
+    KeyFeatures: [
+      "This is an E-commerce Website",
+      "We show our product on My website. The user shows our product",
+      "User love, Added to cart or buy our product quickly.",
+      "User also Payment if not paid cancel his order",
+      "Admin can manage users, products, and orders. If not paid order is deleted from the database.",
+      "User Login, sign up, reset his password, and update his profile. Payment system by stripe.js",
+    ],
+    ClientSiteTechnologies: ["HTML5", "CSS3", "Javascript(ES6)", "React.Js"],
+    ServerSiteTechnologies: [
+      "Node.Js",
+      "express.js",
+      "MongoDb",
+      "JWT",
+      "Stripe.js",
+    ],
+    UsageToolsSoftware: ["Git", "VScode", "Heroku", "Firebase", "Figma"],
+    othersFeatures: [{}],
+  },
+  {
+    projectTittle: "P-Store House",
+    projectKeyword: "#1 MERN Project",
+    liveSiteLink: " ",
+    clientSiteLink: " ",
+    serverSiteLink: "",
+    KeyFeatures: [
+      "This is a warehouse website.",
+      "A dealer can use This website to publish his product and Stock Updates",
+      "He also added new items and show his own items and also removed items, and stock updates",
+      "Use react.js, tailwind CSS, Node.js , Express.js , MongoDB, Firebase",
+    ],
+    ClientSiteTechnologies: ["HTML5", "CSS3", "Javascript(ES6)", "React.Js"],
+    ServerSiteTechnologies: [
+      "Node.Js",
+      "express.js",
+      "MongoDb",
+      "JWT",
+      "Stripe.js",
+    ],
+    UsageToolsSoftware: ["Git", "VScode", "Heroku", "Firebase", "Figma"],
+    othersFeatures: [{}],
+  },
+  {
+    projectTittle: "ADM Industry Ltd.",
+    projectKeyword: "#1 MERN Project",
+    liveSiteLink: " https://adm-industry-limited.web.app/",
+    clientSiteLink:
+      "https://github.com/Abdur-Rahman-Argon/manufacturer-project-client ",
+    serverSiteLink:
+      "https://github.com/Abdur-Rahman-Argon/manufacturer-project-server",
+    KeyFeatures: [
+      "This is industries website.",
+      "They can show all tools on this website. And publish Company others Information",
+      "User visited this website and their product and can order. Also, Payment from here or remove the order",
+      "Admin can manage users and products and orders and add new products.",
+      "We use react.js for the front end, node.js for the server side, and MongoDB for the database",
+    ],
+    ClientSiteTechnologies: ["HTML5", "CSS3", "Javascript(ES6)", "React.Js"],
+    ServerSiteTechnologies: [
+      "Node.Js",
+      "express.js",
+      "MongoDb",
+      "JWT",
+      "Stripe.js",
+    ],
+    UsageToolsSoftware: ["Git", "VScode", "Heroku", "Firebase", "Figma"],
+    othersFeatures: [{}],
+  },
+];
+ */
+//

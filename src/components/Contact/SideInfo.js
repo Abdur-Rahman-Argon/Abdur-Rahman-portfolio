@@ -22,7 +22,7 @@ const SideInfo = () => {
 
           <li class="my-2 flex gap-1 items-start">
             <div class=" pt-5 font-semibold text-4xl text-orange-500">
-              <i class="fa-solid fa-message"></i>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <div class="ml-2 flex flex-col">
@@ -36,22 +36,20 @@ const SideInfo = () => {
 
           <li class="my-2 flex gap-1 items-start">
             <div class=" pt-5 font-semibold text-4xl text-orange-500">
-              <i class="fa-solid fa-message"></i>
+              <i class="fa-solid fa-phone"></i>
             </div>
 
             <div class="ml-2 flex flex-col">
               <h3 class="ml-2 my-2 font-semibold">Contact With Me</h3>
-              <a href="https://api.whatsapp.com/send?phone=%2B8801763378457&fbclid=IwAR0kO_ep4jR3kkjUsFD5LWvioKKMwF4OfrphDZ8bG6knIeYOhKGERFAJF4Q">
-                {/* <a href="tel:+8801763378457"> */}
-                {/* <a href="skype:+8801763378457"> */}
-                <span class="ml-2 text-gray-500">
-                  +8801763378457 (WhatsApp)
-                </span>
-              </a>
+              <span class="ml-2 flex flex-row items-center gap-2 text-gray-500">
+                <a href="tel:+8801763378457">+8801763378457</a>
+                <a href="https://api.whatsapp.com/send?phone=%2B8801763378457&fbclid=IwAR0kO_ep4jR3kkjUsFD5LWvioKKMwF4OfrphDZ8bG6knIeYOhKGERFAJF4Q">
+                  (WhatsApp)
+                </a>
+                <a href="https://join.skype.com/invite/rLpmFk4KtT4L">(Skype)</a>
+              </span>
               <a href="mailto: abdurrahman.me7@gmail.com">
-                <span class="ml-2 text-gray-500">
-                  abdurrahman.me7@gmail.com(Email)
-                </span>
+                abdurrahman.me7@gmail.com(Email)
               </a>
             </div>
           </li>
