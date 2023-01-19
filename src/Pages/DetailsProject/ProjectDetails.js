@@ -1,41 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import useProduct from "../../utls/useProduct";
 
 const ProjectDetails = () => {
+  const { id } = useParams();
+
+  const [data] = useProduct();
+
+  const project = data?.find((p) => p._id === id);
+  // console.log(project);
+
   return (
     <div>
       <div>
         <div class="flex flex-col gap-10 md:flex-row md:p-10 px-3">
           <div class="flex-1">
-            <img
-              src="https://i.ibb.co/1Z1tq2L/Store-2.png"
-              alt=""
-              class="w-10/12 mx-auto"
-            />
+            <img src={project?.imgURL} alt="" class="w-10/12 mx-auto" />
           </div>
           <div class="flex-1">
             <div>
               <h1 class=" text-5xl font-semibold my-3 text-orange-500">
-                P-Store House
+                {project?.projectTittle}
               </h1>
-              <h4 class="text-lg text-green-600 font-medium">
-                #1 MERN Project
+              <h4 class="text-lg text-green-600 cursor-pointer font-medium">
+                #{project?._id} {project?.projectKeyword}
               </h4>
             </div>
 
             {/*  */}
             <div class="w-11/12 mx-auto md:mx-0">
               <div class="flex gap-2 lg:gap-9 my-5">
-                <a href="https://product-store-house.web.app/">
+                <a href={project?.liveSiteLink}>
                   <button class="btn btn-outline normal-case text-xs md:text-lg text-cyan-700">
                     Live Preview
                   </button>
                 </a>
-                <a href="https://product-store-house.web.app/">
+                <a href={project?.clientSiteLink}>
                   <button class="btn btn-outline normal-case text-xs md:text-lg text-cyan-700">
                     Client Site Code
                   </button>
                 </a>
-                <a href="https://product-store-house.web.app/">
+                <a href={project?.serverSiteLink}>
                   <button class="btn btn-outline normal-case text-xs md:text-lg text-cyan-700">
                     Server Site Code
                   </button>
@@ -47,9 +52,11 @@ const ProjectDetails = () => {
             <div className="mt-8">
               <h4 class="text-2xl text-cyan-600 font-medium">Key Features:</h4>
               <ul class="list-disc pl-8">
-                <li class=" my-1 text-sm md:text-base font-medium text-gray-400 ">
-                  {"o"}
-                </li>
+                {project?.KeyFeatures?.map((f) => (
+                  <li class=" my-1 text-sm md:text-base font-medium text-gray-400 ">
+                    {f}
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -59,9 +66,11 @@ const ProjectDetails = () => {
                 Client Site Technologies :
               </h4>
               <ul class=" my-2 list-none ml-2 flex gap-2 flex-wrap">
-                <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
-                  HTML5
-                </li>
+                {project?.ClientSiteTechnologies?.map((t) => (
+                  <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
+                    {t}
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -71,9 +80,11 @@ const ProjectDetails = () => {
                 Server Site Technologies :
               </h4>
               <ul class=" m-2 list-none flex gap-2 flex-wrap">
-                <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
-                  Node.Js
-                </li>
+                {project?.ServerSiteTechnologies?.map((t) => (
+                  <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
+                    {t}
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -83,9 +94,11 @@ const ProjectDetails = () => {
                 Usage Tools & Software :
               </h4>
               <ul class=" m-2 list-none flex gap-2 flex-wrap">
-                <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
-                  Node.Js
-                </li>
+                {project?.UsageToolsSoftware?.map((t) => (
+                  <li class=" text-sm md:text-base font-medium text--400 bg-green-800 px-2 py-1 rounded-full ">
+                    {t}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -95,7 +108,7 @@ const ProjectDetails = () => {
             Others Features
           </h2>
         </div>
-        <div class="text-right mr-10 my-10">
+        <div class="text-right mr-10 my-10 pb-9 ">
           <button class="btn btn-wide btn-outline text-green-700 normal-case ">
             See More Project Preview
             <i class="fa-solid fa-arrow-right font-extrabold ml-2 text-xl"></i>

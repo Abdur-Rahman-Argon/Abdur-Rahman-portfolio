@@ -9,7 +9,7 @@ const routes = createBrowserRouter([
     element: <Home />,
     children: [
       { path: "/", element: <Portfolio></Portfolio> },
-      { path: "/project/:details", element: <ProjectDetails /> },
+      { path: "/project-details/:id", element: <ProjectDetails /> },
     ],
   },
 ]);

@@ -60,22 +60,22 @@ const About = () => {
                 </svg>
               </span>
             </button>
-            <div class=" text-2xl md:text-3xl lg:text-4xl text-white hover:text-green-700">
+            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
               <a href="https://web.facebook.com/profile.php?id=100081629926793">
                 <i className="fa-brands fa-facebook"></i>
               </a>
             </div>
-            <div class=" text-2xl md:text-3xl lg:text-4xl text-white hover:text-green-700">
+            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
               <a href="https://twitter.com/AbdurRahmanMe7">
                 <i className="fa-brands fa-twitter"></i>
               </a>
             </div>
-            <div class=" text-2xl md:text-3xl lg:text-4xl text-white hover:text-green-700">
+            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
               <a href="https://www.linkedin.com/in/md-abdur-rahman-8a1645240/">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
-            <div class=" text-2xl md:text-3xl lg:text-4xl text-white hover:text-green-700">
+            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
               <a href="https://github.com/Abdur-Rahman-Argon">
                 <i className="fa-brands fa-github"></i>
               </a>

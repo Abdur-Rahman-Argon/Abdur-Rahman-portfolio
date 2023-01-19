@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, a } from "react-router-dom";
+import useProduct from "../../utls/useProduct";
 
 const Navbar = () => {
   const navMenu = (
@@ -47,7 +48,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
           >
             {navMenu}
           </ul>
@@ -67,13 +68,13 @@ const Navbar = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2"
           ></svg>
-          Download Resume <i class="fa-solid fa-download mx-2"></i>
+          Download Resume <i className="fa-solid fa-download mx-2"></i>
         </Link>
       </div>
     </div>

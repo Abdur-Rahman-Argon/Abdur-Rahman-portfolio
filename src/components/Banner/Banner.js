@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="mx-auto md:mx-0 flex-1">
           <img
             src="https://i.ibb.co/0FxzTnM/abdr-pic.png"
-            class="w-[250px] md:w-[350px] lg:w-[400px] shadow-2xl rounded-lg shadow-black "
+            className="w-[250px] md:w-[350px] lg:w-[400px] shadow-2xl rounded-lg shadow-black "
             alt=""
           />
         </div>
@@ -30,7 +30,7 @@ const Banner = () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -95,7 +95,7 @@ const Banner = () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -109,7 +109,7 @@ const Banner = () => {
             </ul>
           </div>
 
-          {/* <p className="py-6">
+          {/* <p   className="py-6">
         I am a font end web developer. now i am training in
         programing-hero's webdevelopement chorse. Now I hope, I can
         working very easy in a job.

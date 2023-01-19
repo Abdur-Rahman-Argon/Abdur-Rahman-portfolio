@@ -26,24 +26,24 @@ const Education = () => {
   ];
 
   return (
-    <div class="flex-1">
-      <div class="  my-0 py-0">
-        <h1 class="text-3xl text-gray-400 ">Education</h1>
+    <div className="flex-1">
+      <div className="  my-0 py-0">
+        <h1 className="text-3xl font-semibold text-gray-700 ">Education</h1>
 
         {education.map((e) => (
           <>
             {" "}
-            <div class="mt-8 ">
-              <div class="w-10/12 px-5 border-l-2 relative border-orange-500">
-                <div class="text-orange-500 absolute text-2xl -top-4 -left-4">
-                  <i class="fa-solid fa-graduation-cap"></i>
+            <div className="mt-8 ">
+              <div className="w-10/12 px-5 border-l-2 relative border-orange-500">
+                <div className="text-orange-500 absolute text-2xl -top-4 -left-4">
+                  <i className="fa-solid fa-graduation-cap"></i>
                 </div>
-                <h2 class=" text-xl font-semibold">{e.educationLevel}</h2>
-                <h2 class=" text-lg">
+                <h2 className=" text-xl font-semibold">{e.educationLevel}</h2>
+                <h2 className=" text-lg">
                   {e.institute} /
-                  <span class=" mx-1 text- text-gray-500">{e.section}</span>
+                  <span className=" mx-1 text- text-gray-500">{e.section}</span>
                 </h2>
-                <p class=" text-sm text-gray-500">{e.description}</p>
+                <p className=" text-sm text-gray-500">{e.description}</p>
               </div>
             </div>
           </>
