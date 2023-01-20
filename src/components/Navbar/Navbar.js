@@ -1,33 +1,32 @@
 import React from "react";
-import { Link, a } from "react-router-dom";
 import useProduct from "../../utls/useProduct";
 
 const Navbar = () => {
   const navMenu = (
     <>
       <li>
-        <Link to="/#skills">Skills</Link>
+        <a href="/#skills"> Skills </a>
       </li>
       <li>
-        <Link to="/#education">Education</Link>
+        <a href="/#education">Education</a>
       </li>
       <li>
-        <Link to="/#resent-project">Resent Project</Link>
+        <a href="/#resent-project">Resent Project</a>
       </li>
       <li>
-        <Link to="/#resent-project">Projects</Link>
+        <a href="/#resent-project">Projects</a>
       </li>
       <li>
-        <Link to="/#about">About</Link>
+        <a href="/#about">About</a>
       </li>
       <li>
-        <Link to="/#contact">Contact Me</Link>
+        <a href="/#contact">Contact Me</a>
       </li>
     </>
   );
 
   return (
-    <div className="navbar ">
+    <div className="navbar md:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -48,22 +47,19 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
+            className="menu menu-compact bg-slate-700 dropdown-content mt-3 p-2 shadow  rounded-box w-52"
           >
             {navMenu}
           </ul>
         </div>
-
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Md. Abdur Rahman
-        </Link>
+        <a href="/#down"> Md. Abdur Rahman </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navMenu}</ul>
       </div>
       <div className="navbar-end">
-        <Link
-          to="https:/drive.google.com/file/d/1SrhuJbqwv6M_Hi_opTWxYa1T0rNItAPR/view?usp=sharing"
+        <a
+          href="https:/drive.google.com/file/d/1SrhuJbqwv6M_Hi_opTWxYa1T0rNItAPR/view?usp=sharing"
           className="btn btn-ghost normal-case text-sm md:text-xl text-orange-400"
         >
           <svg
@@ -75,7 +71,7 @@ const Navbar = () => {
             stroke-width="2"
           ></svg>
           Download Resume <i className="fa-solid fa-download mx-2"></i>
-        </Link>
+        </a>
       </div>
     </div>
   );

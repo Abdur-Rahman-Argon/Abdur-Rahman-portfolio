@@ -9,7 +9,7 @@ const Skill = ({ skills, tittle }) => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 justify-center items-start my-1">
+      <div className="grid grid-cols-2 px-6 justify-center items-start my-1">
         {skills.map((s) => (
           <div className="flex flex-col justify-center items-start my-1">
             <h2 className=" text-gray-400 font-bold flex flex-row justify-between text-lg">

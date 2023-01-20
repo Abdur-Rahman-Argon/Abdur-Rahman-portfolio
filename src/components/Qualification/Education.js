@@ -43,7 +43,7 @@ const Education = () => {
                   {e.institute} /
                   <span className=" mx-1 text- text-gray-500">{e.section}</span>
                 </h2>
-                <p className=" text-sm text-gray-500">{e.description}</p>
+                <p className=" text-[14px] text-gray-500">{e.description}</p>
               </div>
             </div>
           </>

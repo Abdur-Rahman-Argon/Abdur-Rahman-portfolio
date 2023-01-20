@@ -9,17 +9,17 @@ const About = () => {
 
   return (
     <div>
-      <div className="hero-content flex-col lg:flex-row ">
+      <div className="hero-content flex-col md:flex-row ">
         <div className=" flex-1">
           <img
             src="https://i.ibb.co/Fmk5rGr/about.png"
-            className="w-48 w-80 lg:w-96 mx-auto  rounded-lg shadow-2xl"
+            className="w-48  lg:w-96 mx-auto  rounded-lg shadow-2xl"
             alt=""
           />
         </div>
         <div className=" flex-1">
           <div className=" text-left">
-            <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+            <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
               Who am I?
             </h3>
             <h1 className="   text-2xl font-bold">
@@ -60,22 +60,22 @@ const About = () => {
                 </svg>
               </span>
             </button>
-            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
+            <div class=" text-2xl md:text-3xl lg:text-4xl  hover:text-green-700">
               <a href="https://web.facebook.com/profile.php?id=100081629926793">
                 <i className="fa-brands fa-facebook"></i>
               </a>
             </div>
-            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
+            <div class=" text-2xl md:text-3xl lg:text-4xl  hover:text-green-700">
               <a href="https://twitter.com/AbdurRahmanMe7">
                 <i className="fa-brands fa-twitter"></i>
               </a>
             </div>
-            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
+            <div class=" text-2xl md:text-3xl lg:text-4xl  hover:text-green-700">
               <a href="https://www.linkedin.com/in/md-abdur-rahman-8a1645240/">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
-            <div className=" text-2xl md:text-3xl lg:text-4xl text- hover:text-green-700">
+            <div class=" text-2xl md:text-3xl lg:text-4xl  hover:text-green-700">
               <a href="https://github.com/Abdur-Rahman-Argon">
                 <i className="fa-brands fa-github"></i>
               </a>

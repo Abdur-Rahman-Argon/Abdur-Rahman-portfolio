@@ -1,10 +1,11 @@
 import React from "react";
 
 const Project = ({ projectInfo }) => {
-  const { projectTittle, liveSiteLink, _id, imgURL } = projectInfo;
+  const { projectTittle, liveSiteLink, _id, imgURL, clientSiteLink } =
+    projectInfo;
   return (
-    <div>
-      <div className="md:ml-8 flex-1 relative overflow-hidden rounded-lg shadow-2xl hover:transform  hover:scale-105 ease-in-out duration-100 ">
+    <div className="md:ml-8 flex-1">
+      <div className=" relative overflow-hidden rounded-lg shadow-2xl hover:transform  hover:scale-105 ease-in-out duration-100 ">
         <div className=" overflow-hidden   w-full h-52">
           <img
             src={imgURL}
@@ -12,23 +13,27 @@ const Project = ({ projectInfo }) => {
             alt=""
           />
         </div>
-        <div className="text-center my-3">
-          <h1 className="text-2xl text-center font-semibold">
-            {projectTittle}
-          </h1>
-          <div className="flex my-3 justify-between items-center px-5">
-            <a href={liveSiteLink}>
-              <button className="text-base text--600 font-medium btn bg-slate-800 hover:text-lime-400">
-                Preview <i class="fa-regular fa-eye mx-1"></i>
-              </button>
-            </a>
-            <a
-              className="text-base text-center text--600 font-medium btn hover:text-lime-400 bg-slate-800 "
-              href={`/project-details/${_id}`}
-            >
-              Details
-            </a>
-          </div>
+      </div>
+      <div className="text-center my-1 flex justify-between items-center">
+        <h1 className="text-xl text-center font-medium">{projectTittle}</h1>
+
+        <div className="flex my-3 justify-between items-center gap-4">
+          <a href={clientSiteLink}>
+            <button className="text-base  font-medium  rounded-full py-1 px-2 bg-orange-500 hover:text-lime-400">
+              <i class="fa-solid fa-code"></i>
+            </button>
+          </a>
+          <a href={liveSiteLink}>
+            <button className="text-base  font-medium  rounded-full py-1 px-1 bg-orange-500 hover:text-lime-400">
+              <i class="fa-regular fa-eye mx-1"></i>
+            </button>
+          </a>
+          <a
+            className="text-base text-center  font-medium rounded-full py-1 px-2 bg-orange-500  hover:text-lime-400 "
+            href={`/project-details/${_id}`}
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -36,6 +41,34 @@ const Project = ({ projectInfo }) => {
 };
 
 export default Project;
+
+/* 
+ {"_id":"01", 
+  "imgURL":"",
+  "imgCaption":"",
+  "projectTittle":"",
+  "projectKeyword":"",
+  "liveSiteLink":"",
+  "clientSiteLink":"",
+  "serverSiteLink":"",
+  "KeyFeatures":[""],
+  "ClientSiteTechnologies":["","","",""],
+  "ServerSiteTechnologies":["","","","",""],
+  "UsageToolsSoftware":["","","","",""],
+  "PublicFeatures":[""],
+  "UsersFeatures":[""],
+  "AdminFeatures":[""],
+ "othersFeatures":[
+    {"featureTittle":"", "imgURL":"", "description":"", "imgCaption":""},
+    {"featureTittle":"", "imgURL":"", "description":"", "imgCaption":""}
+  ],
+  "users":[
+    {"name":"", "email":"", "password":""},
+    {"name":"", "email":"", "password":""},
+    {"name":"", "email":"", "password":""}
+  ]
+},
+*/
 
 /* 
 const project = [

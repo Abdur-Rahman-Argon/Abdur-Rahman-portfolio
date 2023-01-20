@@ -4,7 +4,7 @@ const useProduct = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/portfolio-project")
+    fetch("https://my-web-server.onrender.com/portfolio-project")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

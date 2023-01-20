@@ -21,7 +21,7 @@ const Training = () => {
                 January 2022 to May 2022.
               </span>
             </h2>
-            <p className=" text-sm text-gray-500">
+            <p className=" text-[14px] text-gray-500">
               Programming Hero Is my Best Training Center. Our trainer Ghankar
               Mahbub sir is best trainer. He present every topic very smartly.
               Every team member are always supported us. I am satisfied got

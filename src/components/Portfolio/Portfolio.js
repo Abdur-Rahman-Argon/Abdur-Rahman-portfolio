@@ -29,17 +29,18 @@ const Portfolio = () => {
   return (
     <div className="  ">
       {/*  */}
-      <header className=" my-10">
+      <header className=" mx-6 my-10">
         <Banner />
       </header>
 
       {/*  */}
+
       <section
-        id="#about"
+        id="about"
         className="text-black w-full mx-auto mt-0 bg-gray-200 py-4"
       >
         <div className=" text-center mx-20 my-5 ">
-          <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get to Know Me
           </h3>
           <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
@@ -50,11 +51,11 @@ const Portfolio = () => {
       </section>
 
       <section
-        id="#skills"
+        id="skills"
         className="text-white w-full mx-auto mt-0 bg-slate-900 my-10"
       >
         <div className=" text-center mx-20 my-5 ">
-          <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I can do
           </h3>
           <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
@@ -65,26 +66,27 @@ const Portfolio = () => {
       </section>
 
       <section
-        id="#education"
-        className="text-black w-full mx-auto mt-0 bg-gray-200 py-4"
+        id="education"
+        className="text-black w-full mx-auto mt-0 bg-gray-200 pb-8 pt-1"
       >
-        <div className=" text-center mx-20 my-4 ">
-          <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+        <div className=" text-center mx-20 my-8 ">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I Learn
           </h3>
           <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
             EDUCATION & Learning
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row justify-around px-16 gap-10">
+        <div className="flex flex-col md:flex-row justify-around px-16 gap-10">
           <Education />
           <Training />
         </div>
       </section>
 
-      <section id="#resent-project" className=" py-4">
+      {/* projects */}
+      <section id="resent-project" className=" my-10">
         <div className=" text-center mx-20 my-5 ">
-          <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I made?
           </h3>
           <h1 className="text-3xl my-[4px] uppercase  text-orange-400 font-bold text-center">
@@ -92,14 +94,14 @@ const Portfolio = () => {
           </h1>
         </div>
         <div>
-          <p className=" w-8/12 lg:6/12 mx-auto text-center">
+          <p className=" w-8/12 lg:6/12 mx-auto text-center font-normal">
             FWR blocks contains a variety of blocks and elements that you can
             mix and match to create various layouts. FWR blocks follow a similar
             pattern and design style so you can reuse it in your websites and
             web applications.
           </p>
         </div>
-        <div className=" flex justify-center items-center gap-10 my-8">
+        <div className=" flex justify-center items-center gap-2 md:gap-10 my-8">
           <button
             onClick={change1}
             className={` px-8 py-3 border-[1px] ${
@@ -121,9 +123,9 @@ const Portfolio = () => {
             Demo Project
           </button>
         </div>
-        <div>
+        <div className="mx-8 lg:mx-1 gap-4 md:gap-10">
           <Projects />
-          <div class="text-center mr-10 my-5  ">
+          <div class="text-center mr-10 my-10 pb-9 ">
             <button class="btn btn-wide btn-outline text-green-700 normal-case ">
               See More Project Preview
               <i class="fa-solid fa-arrow-right font-extrabold ml-2 text-xl"></i>
@@ -132,12 +134,23 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* <section id="demo-project" className=" my-10">
+        <div className=" text-center mx-20 my-5 ">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+            What I made
+          </h3>
+          <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
+            Demo Project
+          </h1>
+        </div>
+      </section> */}
+
       <section
-        id="#contact"
+        id="contact"
         className="text-black w-full mx-auto mt-0 bg-gray-200 py-4"
       >
         <div className=" text-center mx-20 my-5 ">
-          <h3 className="  text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
+          <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get in Touch
           </h3>
           <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
