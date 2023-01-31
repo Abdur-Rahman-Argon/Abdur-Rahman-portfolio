@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div className="flex flex-row lg:flex-row-reverse my-10 justify-center items-center">
-      <div className="flex flex-col md:flex-row-reverse md:gap-20 gap-4 justify-center">
+      <div className="flex flex-col sm:flex-row-reverse md:gap-20 gap-4 justify-center">
         <div className="mx-auto md:mx-0 flex-1">
           <img
             src="https://i.ibb.co/0FxzTnM/abdr-pic.png"
@@ -16,7 +16,7 @@ const Banner = () => {
           <h3 className=" te text-gray-500 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get to Know Me
           </h3>
-          <h1 className="text-4xl my-2 font-bold">
+          <h1 className="text-xl sm:text-lg md:text-4xl my-2 font-bold">
             Hi, I'm <span className=" text-orange-500"> Abdur Rahman</span>
           </h1>
           <h1 className="text-2xl ">Font End Webdeveloper</h1>
@@ -45,9 +45,7 @@ const Banner = () => {
                   </svg>
                 </span>
 
-                <span className="mr-2">
-                  Joypurhat, Rajshahi, Dhaka, Bangladesh
-                </span>
+                <span className="mr-2">Joypurhat, Rajshahi, Bangladesh</span>
               </li>
               <li className="my-2 flex items-center gap-2">
                 <span className="">

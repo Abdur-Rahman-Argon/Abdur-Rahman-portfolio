@@ -8,9 +8,9 @@ import Footer from "../Footer/Footer";
 import Education from "../Qualification/Education";
 import Training from "../Qualification/Training";
 import Projects from "../Projects/Projects";
-import Navbar from "../Navbar/Navbar";
 import Skills from "../Skills/Skills";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [resent, setResent] = useState(true);
@@ -34,16 +34,15 @@ const Portfolio = () => {
       </header>
 
       {/*  */}
-
       <section
         id="about"
-        className="text-black w-full mx-auto mt-0 bg-gray-200 py-4"
+        className="text-black w-full mx-auto mt-0 bg-gray-200 px-5 py-4"
       >
         <div className=" text-center mx-20 my-5 ">
           <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get to Know Me
           </h3>
-          <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
+          <h1 className=" text-xl md:text-4xl uppercase  text-orange-400 font-bold text-center">
             About Me
           </h1>
         </div>
@@ -58,7 +57,7 @@ const Portfolio = () => {
           <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I can do
           </h3>
-          <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
+          <h1 className=" text-lg md:text-4xl uppercase  text-orange-400 font-bold text-center">
             My Skills
           </h1>
         </div>
@@ -73,11 +72,11 @@ const Portfolio = () => {
           <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I Learn
           </h3>
-          <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
+          <h1 className=" text-lg md:text-4xl uppercase  text-orange-500 font-bold text-center">
             EDUCATION & Learning
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row justify-around px-16 gap-10">
+        <div className="flex flex-col md:flex-row justify-around px-8 sm:px-16 gap-10">
           <Education />
           <Training />
         </div>
@@ -89,12 +88,12 @@ const Portfolio = () => {
           <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             What I made?
           </h3>
-          <h1 className="text-3xl my-[4px] uppercase  text-orange-400 font-bold text-center">
+          <h1 className=" text-lg md:text-3xl my-[4px] uppercase  text-orange-400 font-bold text-center">
             Portfolio Projects Show
           </h1>
         </div>
         <div>
-          <p className=" w-8/12 lg:6/12 mx-auto text-center font-normal">
+          <p className=" w-10/12 lg:6/12 mx-auto text-center font-normal">
             FWR blocks contains a variety of blocks and elements that you can
             mix and match to create various layouts. FWR blocks follow a similar
             pattern and design style so you can reuse it in your websites and
@@ -126,10 +125,13 @@ const Portfolio = () => {
         <div className="mx-8 lg:mx-1 gap-4 md:gap-10">
           <Projects />
           <div class="text-center mr-10 my-10 pb-9 ">
-            <button class="btn btn-wide btn-outline text-green-700 normal-case ">
+            <Link
+              to="/projects"
+              class="btn btn-wide btn-outline text-green-700 normal-case "
+            >
               See More Project Preview
               <i class="fa-solid fa-arrow-right font-extrabold ml-2 text-xl"></i>
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -153,11 +155,11 @@ const Portfolio = () => {
           <h3 className="  text-gray-600 text-[15px]  rounded-l-full rounded-tr-full  font-medium">
             Get in Touch
           </h3>
-          <h1 className="text-4xl uppercase  text-orange-400 font-bold text-center">
+          <h1 className=" text-lg sm:text-4xl uppercase  text-orange-400 font-bold text-center">
             Contact Me
           </h1>
         </div>
-        <div className="flex my-5  flex-col md:flex-row items-start md:gap-16 mx-10">
+        <div className="flex my-5  flex-col md:flex-row items-start mx-2 md:gap-16 md:mx-10">
           <SideInfo />
           <Contact />
         </div>

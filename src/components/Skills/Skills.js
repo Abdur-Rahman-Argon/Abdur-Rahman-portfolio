@@ -24,7 +24,7 @@ const Skills = () => {
     { name: "React-Bootstrap  ", level: "Expertise" },
     { name: "Hooks-From ", level: "Expertise" },
     { name: "daisyUi ", level: "Expertise" },
-    { name: "HooksFrom ", level: "Expertise" },
+    { name: "React Firebase Hooks", level: "Expertise" },
   ];
 
   const frontEndTittle = "Front End Skills";

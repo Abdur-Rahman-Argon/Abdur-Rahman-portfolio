@@ -1,7 +1,6 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+
 import { useState } from "react";
 
 const Contact = () => {
@@ -30,11 +29,11 @@ const Contact = () => {
             setSuccess("");
             setError("Message Send Failed");
           }
-          console.log();
+          // console.log();
         }
       );
 
-    console.log(e.target.name.value);
+    // console.log(e.target.name.value);
     e.target.reset();
   };
 
@@ -105,13 +104,13 @@ const Contact = () => {
           <div className="text-left  my-3">
             <button
               type="submit"
-              className="input uppercase text-gray-700 font-semibold text-xl input-bordered focus:outline-none w-44"
+              className="input uppercase hover:text-white hover:bg-green-600 text-gray-700 font-semibold text-xl input-bordered focus:outline-none w-44"
             >
               send <i className="fa-solid fa-paper-plane mx-2 "></i>
             </button>
             {success !== "" && (
               <>
-                <p className=" text-green-600  text-left text-2xl font-normal">
+                <p className=" text-success text-left text-2xl font-normal">
                   {success}
                 </p>
               </>

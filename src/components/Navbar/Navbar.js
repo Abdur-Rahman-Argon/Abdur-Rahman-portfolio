@@ -1,5 +1,6 @@
 import React from "react";
-import useProduct from "../../utls/useProduct";
+import useProduct from "../../utils/useProduct";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navMenu = (
@@ -13,14 +14,21 @@ const Navbar = () => {
       <li>
         <a href="/#resent-project">Resent Project</a>
       </li>
-      <li>
-        <a href="/#resent-project">Projects</a>
-      </li>
+
       <li>
         <a href="/#about">About</a>
       </li>
+
       <li>
         <a href="/#contact">Contact Me</a>
+      </li>
+
+      <li>
+        <Link to="/projects">Projects</Link>
+      </li>
+
+      <li>
+        <a href="/">Blogs</a>
       </li>
     </>
   );
@@ -52,7 +60,11 @@ const Navbar = () => {
             {navMenu}
           </ul>
         </div>
-        <a href="/#down"> Md. Abdur Rahman </a>
+
+        <Link to="/">
+          {" "}
+          <h1 className=" text-sm sm:text-lg"> Md. Abdur Rahman </h1>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navMenu}</ul>

@@ -9,11 +9,11 @@ const About = () => {
 
   return (
     <div>
-      <div className="hero-content flex-col md:flex-row ">
+      <div className="hero-content flex-col sm:flex-row justify-center items-start ">
         <div className=" flex-1">
           <img
             src="https://i.ibb.co/Fmk5rGr/about.png"
-            className="w-48  lg:w-96 mx-auto  rounded-lg shadow-2xl"
+            className="w-48 sm:w-72  lg:w-96 mx-auto  rounded-lg shadow-2xl"
             alt=""
           />
         </div>
@@ -26,7 +26,7 @@ const About = () => {
               I am a Professional Web Developer
             </h1>
           </div>
-          <p className="py-6 text-left w-9/12">
+          <p className="py-6 text-left w-full md:w-9/12">
             Front-end Developer with proven skills-building professional MERN
             projects. Capable of continuous learning new and updated
             technologies as I possess tremendous zeal about technology.

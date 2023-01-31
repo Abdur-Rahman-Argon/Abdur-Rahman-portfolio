@@ -5,6 +5,7 @@ const useProduct = () => {
 
   useEffect(() => {
     fetch("https://my-web-server.onrender.com/portfolio-project")
+      // fetch("http://localhost:5000/portfolio-project")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
